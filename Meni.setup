@@ -1,0 +1,27 @@
+Hi Meni!
+
+I'm not sure how familiar you are with git, so I'm adding instructions on
+how to get this repo set up on your local machine. If this is trivial, please
+feel free to delete this note and tell me I'm dumb.
+
+Enter these commands to get the repo setup:
+
+>git init
+
+>touch test.commit
+
+>git add test.commit
+
+>git config --global user.email "you@example.com"
+
+>git config --global user.name "Your name"
+
+>git commit -m "First commit"
+
+>git remote add origin https://github.com/cis399-2017-team/Ninjas.git
+
+>git push -u origin master
+
+This is gonna be a really fun class! :)
+
+-Steven
