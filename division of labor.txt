@@ -1,0 +1,19 @@
+List the EC2 instance IDs and private IP addresses of all the instances you created. --STEVE DOES THIRD
+
+Describe how you find the public IP address of a given instance using the EC2 console. (The public IP address may change whenever an instance is stopped and restarted.) --???? both
+
+Provide the output of a command showing how much disk space one of your instances has.  --MENI
+
+Provide the output of a command showing how much memory one of your instances has. --STEVE
+
+Provide a listing showing all the processes running in one of your instances.  --STEVE
+
+Provide the output of a command showing the network interface configuration of your instance (this should show its private IP address). --MENI
+
+Provide the output of a command showing the routing table of your instance. --MENI
+
+Provide the output of a command showing all of the open network connections and ports on one of your instances. --MENI
+
+Provide a listing of all of the software packages installed on one your instances. --STEVE
+
+Provide transcripts showing the output of the commands you use to update your package database and upgrade packages on each of your instances.  --MENI
