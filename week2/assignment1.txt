@@ -42,15 +42,99 @@ Swap:             0           0           0
 
 6. MENI 
 
+ubuntu@ip-10-0-1-164:~$ ifconfig
+eth0      Link encap:Ethernet  HWaddr 0a:5f:70:bf:69:46
+          inet addr:10.0.1.164  Bcast:10.0.1.255  Mask:255.255.255.0
+          inet6 addr: fe80::85f:70ff:febf:6946/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:9001  Metric:1
+          RX packets:1841 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1545 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:153371 (153.3 KB)  TX bytes:198874 (198.8 KB)
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:160 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:160 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1
+          RX bytes:11840 (11.8 KB)  TX bytes:11840 (11.8 KB)
+
 7. MENI 
 
-ubuntu@ip-10-0-1-5:~$ route
+root@ip-10-0-1-164:~# netstat -r
 Kernel IP routing table
-Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
-default         ip-10-0-1-1.us- 0.0.0.0         UG    0      0        0 eth0
-10.0.1.0        *               255.255.255.0   U     0      0        0 eth0
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+default         ip-10-0-1-1.us- 0.0.0.0         UG        0 0          0 eth0
+10.0.1.0        *               255.255.255.0   U         0 0          0 eth0
 
 8. MENI 
+
+ubuntu@ip-10-0-1-164:~$ netstat
+Active Internet connections (w/o servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State
+tcp        0      0 ip-10-0-1-164.us-we:ssh 128-223-223-205-w:11392 ESTABLISHED Active UNIX domain sockets (w/o servers)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         DGRAM                    8751     /run/systemd/notify
+unix  2      [ ]         DGRAM                    17769    /run/user/1000/systemd/notify
+unix  10     [ ]         DGRAM                    8760     /run/systemd/journal/dev-log
+unix  2      [ ]         DGRAM                    8761     /run/systemd/journal/syslog
+unix  7      [ ]         DGRAM                    8763     /run/systemd/journal/socket
+unix  3      [ ]         STREAM     CONNECTED     10189    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    13420
+unix  3      [ ]         STREAM     CONNECTED     13933
+unix  3      [ ]         STREAM     CONNECTED     15380    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13419
+unix  3      [ ]         STREAM     CONNECTED     10188
+unix  3      [ ]         STREAM     CONNECTED     14141
+unix  2      [ ]         DGRAM                    13086
+unix  3      [ ]         STREAM     CONNECTED     13428
+unix  3      [ ]         STREAM     CONNECTED     13435
+unix  3      [ ]         DGRAM                    10990
+unix  3      [ ]         STREAM     CONNECTED     15337    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13199
+unix  3      [ ]         STREAM     CONNECTED     13437    /var/run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    10206
+unix  3      [ ]         STREAM     CONNECTED     15366    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13438    /var/run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    10988
+unix  3      [ ]         STREAM     CONNECTED     13434
+unix  3      [ ]         DGRAM                    10991
+unix  2      [ ]         DGRAM                    10195
+unix  2      [ ]         DGRAM                    17656
+unix  3      [ ]         STREAM     CONNECTED     14477
+unix  2      [ ]         DGRAM                    9309
+unix  3      [ ]         STREAM     CONNECTED     14478    /var/run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM                    10205
+unix  2      [ ]         DGRAM                    9343
+unix  2      [ ]         DGRAM                    13431
+unix  3      [ ]         DGRAM                    10989
+unix  3      [ ]         STREAM     CONNECTED     13406
+unix  2      [ ]         DGRAM                    10978
+unix  3      [ ]         STREAM     CONNECTED     13436    /var/run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     13400
+unix  3      [ ]         STREAM     CONNECTED     15344    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15338    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13256
+unix  3      [ ]         STREAM     CONNECTED     17822
+unix  2      [ ]         DGRAM                    14661
+unix  3      [ ]         STREAM     CONNECTED     17821
+unix  3      [ ]         STREAM     CONNECTED     17730
+unix  2      [ ]         DGRAM                    17746
+unix  3      [ ]         STREAM     CONNECTED     10903    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    13284
+unix  3      [ ]         STREAM     CONNECTED     10902
+unix  2      [ ]         DGRAM                    12190
+unix  3      [ ]         STREAM     CONNECTED     15580    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     13562
+unix  3      [ ]         STREAM     CONNECTED     9591
+unix  2      [ ]         DGRAM                    17736
+unix  3      [ ]         STREAM     CONNECTED     9592     /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15352    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     15579
+unix  2      [ ]         DGRAM                    13081
+unix  3      [ ]         STREAM     CONNECTED     17745    /run/systemd/journal/stdout
 
 9. STEVE
 
