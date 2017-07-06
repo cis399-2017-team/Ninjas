@@ -6,8 +6,8 @@ Steven Parker, Meni Fontaine
    Private IP: 10.0.1.5
 
    MeniNinja
-   Instance ID:
-   Private IP:
+   Instance ID: i-0a7f116327f96d83e
+   Private IP: 10.0.1.164
 
    ThirdNinja
    Instance ID: i-012cda9a49af4a0f6
@@ -19,7 +19,17 @@ Steven Parker, Meni Fontaine
 	**Under the column "Instance ID", you can find the IDs
 	**Under "IPv4 Public IP", you can find the pub IP
 
-3. MENI
+3. 
+
+ubuntu@ip-10-0-1-5:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            488M     0  488M   0% /dev
+tmpfs           100M  3.1M   97M   4% /run
+/dev/xvda1      7.7G  962M  6.8G  13% /
+tmpfs           496M     0  496M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           496M     0  496M   0% /sys/fs/cgroup
+tmpfs           100M     0  100M   0% /run/user/1000
 
 4. 
 
@@ -28,3 +38,20 @@ ubuntu@ip-10-0-1-200:~$ free -m
 Mem:            990          47         615           3         327         789
 Swap:             0           0           0
 
+5. STEVE
+
+6. MENI 
+
+7. MENI 
+
+ubuntu@ip-10-0-1-5:~$ route
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+default         ip-10-0-1-1.us- 0.0.0.0         UG    0      0        0 eth0
+10.0.1.0        *               255.255.255.0   U     0      0        0 eth0
+
+8. MENI 
+
+9. STEVE
+
+10. MENI 
