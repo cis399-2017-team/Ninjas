@@ -65,7 +65,7 @@ KiB Swap:        0 total,        0 free,        0 used.   760192 avail Mem
    19 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd
    20 root      39  19       0      0      0 S  0.0  0.0   0:00.22 khugepaged
 
-6. MENI 
+6.  
 
 ubuntu@ip-10-0-1-164:~$ ifconfig
 eth0      Link encap:Ethernet  HWaddr 0a:5f:70:bf:69:46
@@ -86,7 +86,7 @@ lo        Link encap:Local Loopback
           collisions:0 txqueuelen:1
           RX bytes:11840 (11.8 KB)  TX bytes:11840 (11.8 KB)
 
-7. MENI 
+7. 
 
 root@ip-10-0-1-164:~# netstat -r
 Kernel IP routing table
@@ -94,7 +94,7 @@ Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
 default         ip-10-0-1-1.us- 0.0.0.0         UG        0 0          0 eth0
 10.0.1.0        *               255.255.255.0   U         0 0          0 eth0
 
-8. MENI 
+8. 
 
 ubuntu@ip-10-0-1-164:~$ netstat
 Active Internet connections (w/o servers)
@@ -615,4 +615,4 @@ xz-utils/xenial,now 5.1.1alpha+20120614-2ubuntu2 amd64 [installed]
 zerofree/xenial,now 1.0.3-1 amd64 [installed]
 zlib1g/xenial-updates,now 1:1.2.8.dfsg-2ubuntu4.1 amd64 [installed]
 
-10. MENI 
+10. See assignment1_problem10.txt under week2
