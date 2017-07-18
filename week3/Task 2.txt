@@ -1,0 +1,19 @@
+root@ip-10-0-1-5:~# cat /var/run/sshd.pid
+15646
+root@ip-10-0-1-5:~# kill 15646
+root@ip-10-0-1-5:~# ps -ef | grep sshd
+root      9574     1  0 01:54 ?        00:00:00 sshd: ubuntu [priv]
+ubuntu    9613  9574  0 01:54 ?        00:00:00 sshd: ubuntu@pts/0
+root      9648     1  0 01:59 ?        00:00:00 sshd: ubuntu [priv]
+ubuntu    9680  9648  0 01:59 ?        00:00:00 sshd: ubuntu@pts/1
+root     12357 12324  0 02:27 pts/0    00:00:00 systemctl status sshd.service
+root     15665 12324  0 02:53 pts/0    00:00:00 grep --color=auto sshd
+root@ip-10-0-1-5:~# puppet agent -t
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-1-5.us-west-2.compute.internal
+Info: Applying configuration version '1500346005'
+Notice: /Stage[main]/Sshd/Service[ssh]/ensure: ensure changed 'stopped' to 'running'
+Info: /Stage[main]/Sshd/Service[ssh]: Unscheduling refresh on Service[ssh]
+Notice: Finished catalog run in 0.11 seconds
+root@ip-10-0-1-5:~#

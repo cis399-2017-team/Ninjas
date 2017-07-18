@@ -1,0 +1,16 @@
+root@ip-10-0-1-5:~# rm -f /etc/ssh/sshd_config
+root@ip-10-0-1-5:~# ls /etc/ssh
+moduli                ssh_host_ecdsa_key        ssh_host_rsa_key
+ssh_config            ssh_host_ecdsa_key.pub    ssh_host_rsa_key.pub
+ssh_host_dsa_key      ssh_host_ed25519_key      ssh_import_id
+ssh_host_dsa_key.pub  ssh_host_ed25519_key.pub
+root@ip-10-0-1-5:~# puppet agent -t
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-1-5.us-west-2.compute.internal
+Info: Applying configuration version '1500346005'
+Notice: /Stage[main]/Sshd/File[sshdconfig]/ensure: defined content as '{md5}8383ec31cdeb8b721a56d1e3ea7eb8d5'
+Info: /Stage[main]/Sshd/File[sshdconfig]: Scheduling refresh of Service[ssh]
+Notice: /Stage[main]/Sshd/Service[ssh]: Triggered 'refresh' from 1 events
+Notice: Finished catalog run in 0.16 seconds
+root@ip-10-0-1-5:~#

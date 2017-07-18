@@ -1,0 +1,10 @@
+root@ip-10-0-1-5:~# rm -f .ssh/authorized_keys
+root@ip-10-0-1-5:~# puppet agent -t
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-1-5.us-west-2.compute.internal
+Info: Applying configuration version '1500346005'
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[SteveNinja]/ensure: created
+Notice: /Stage[main]/Sshd/Ssh_authorized_key[MeniNinja]/ensure: created
+Notice: Finished catalog run in 0.10 seconds
+root@ip-10-0-1-5:~#

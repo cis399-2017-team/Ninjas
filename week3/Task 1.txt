@@ -1,0 +1,40 @@
+root@ip-10-0-1-5:~# apt-get purge openssh-server
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following packages will be REMOVED:
+  openssh-server*
+0 upgraded, 0 newly installed, 1 to remove and 4 not upgraded.
+After this operation, 912 kB disk space will be freed.
+Do you want to continue? [Y/n] Y
+(Reading database ... 79601 files and directories currently installed.)
+Removing openssh-server (1:7.2p2-4ubuntu2.2) ...
+Purging configuration files for openssh-server (1:7.2p2-4ubuntu2.2) ...
+Processing triggers for man-db (2.7.5-1) ...
+root@ip-10-0-1-5:~# puppet agent -t
+Info: Retrieving pluginfacts
+Info: Retrieving plugin
+Info: Caching catalog for ip-10-0-1-5.us-west-2.compute.internal
+Info: Applying configuration version '1500346005'
+Notice: /Stage[main]/Sshd/Package[openssh-server]/ensure: ensure changed 'purged' to 'latest'
+Notice: /Stage[main]/Sshd/File[sshdconfig]/content:
+--- /etc/ssh/sshd_config        2017-07-18 02:48:33.724156163 +0000
++++ /tmp/puppet-file20170718-14913-yyaly1       2017-07-18 02:48:35.824177769 +0000
+@@ -49,7 +49,7 @@
+ ChallengeResponseAuthentication no
+
+ # Change to no to disable tunnelled clear text passwords
+-#PasswordAuthentication yes
++PasswordAuthentication no
+
+ # Kerberos options
+ #KerberosAuthentication no
+
+Info: Computing checksum on file /etc/ssh/sshd_config
+Info: FileBucket got a duplicate file {md5}bd3a2b95f8b4b180eed707794ad81e4d
+Info: /Stage[main]/Sshd/File[sshdconfig]: Filebucketed /etc/ssh/sshd_config to puppet with sum bd3a2b95f8b4b180eed707794ad81e4d
+Notice: /Stage[main]/Sshd/File[sshdconfig]/content: content changed '{md5}bd3a2b95f8b4b180eed707794ad81e4d' to '{md5}8383ec31cdeb8b721a56d1e3ea7eb8d5'
+Info: /Stage[main]/Sshd/File[sshdconfig]: Scheduling refresh of Service[ssh]
+Notice: /Stage[main]/Sshd/Service[ssh]: Triggered 'refresh' from 1 events
+Notice: Finished catalog run in 3.50 seconds
+root@ip-10-0-1-5:~#
