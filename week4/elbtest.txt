@@ -1,0 +1,6 @@
+When shutting off one instance, load balancer appropriately sends traffic to the functioning instance.
+When both instances are shut off, load balancer cannot display files as expected.
+However, when turning an instance back on, the load balancer takes a while to register the change, so it continues to
+fail for about 10 seconds, then eventually starts serving the pages correctly again. We had trouble with the URL serving
+caches pages, so we had to ctrl-F5 to really test the pages. Little idiosyncracies. All in all, balancer should be
+functioning properly!
