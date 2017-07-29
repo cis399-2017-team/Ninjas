@@ -1,0 +1,33 @@
+Team Name:
+	Hot Shame:
+		34.212.218.18: connection refused, password
+		35.162.107.173: connection refused, password
+		35.164.154.53: connection refused, password
+	Binary Boiz:
+		35.161.107.254: Good to go
+		52.27.48.226: denied, publickey
+		35.160.253.168: denied, publickey
+	Segmentation Squad:
+		35.161.210.61: denied, password prompt
+		35.167.7.66: denied, password prompt
+		52.35.159.146: denied, password prompt
+	Fork Bomb:
+		34.210.161.107: denied, publickey
+		52.36.94.3: denied, publickey
+		34.210.59.21: denied, publickey
+		34.212.155.136: denied, publickey
+		34.210.229.207: denied, publickey
+	Hideous Snakes:
+		54.70.181.182: denied, publickey
+		35.166.125.131: denied, publickey
+		34.208.231.112: denied, publickey
+	Fighting Mongooses:
+		34.211.216.177: Good to go
+		35.164.218.151: Good to go
+		34.212.41.75: denied, publickey
+	alphabet[11:14]:
+		52.41.11.58: denied, publickey
+		35.164.220.179: denied, publickey
+		35.162.13.179: denied, publickey
+
+This is somewhat disappointing...
