@@ -1,0 +1,10 @@
+Jul 28 06:41:48 ip-10-0-1-164 systemd-logind[1073]: New session 1048 of user nsato10.
+Jul 28 19:00:05 ip-10-0-1-164 systemd-logind[1073]: New session 1215 of user jsheabia.
+Jul 28 22:28:22 ip-10-0-1-164 systemd-logind[1073]: New session 1261 of user dholstege.
+Jul 29 19:26:17 ip-10-0-1-164 systemd-logind[1073]: New session 1537 of user ubuntu.
+Jul 30 03:02:45 ip-10-0-1-164 systemd-logind[1073]: New session 1637 of user jemin.
+Jul 30 19:16:56 ip-10-0-1-164 systemd-logind[1073]: New session 1852 of user slynch.
+Jul 30 20:05:53 ip-10-0-1-164 systemd-logind[1073]: New session 1864 of user nboyd.
+Jul 30 21:18:42 ip-10-0-1-164 systemd-logind[1073]: New session 1881 of user slynch.
+Jul 30 21:26:09 ip-10-0-1-164 systemd-logind[1073]: New session 1884 of user aziz94shh.
+Jul 30 21:59:37 ip-10-0-1-164 systemd-logind[1073]: New session 1891 of user cnf.

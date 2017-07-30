@@ -1,0 +1,6 @@
+root@ip-10-0-1-5:/var/log# cat auth.log | grep "New session"
+Jul 30 16:58:27 ip-10-0-1-5 systemd-logind[1085]: New session 1833 of user houllette.
+Jul 30 21:19:13 ip-10-0-1-5 systemd-logind[1085]: New session 1891 of user slynch.
+Jul 30 21:26:35 ip-10-0-1-5 systemd-logind[1085]: New session 1894 of user aziz94shh.
+Jul 30 21:52:26 ip-10-0-1-5 systemd-logind[1085]: New session 1900 of user cnf.
+Jul 30 21:53:29 ip-10-0-1-5 systemd-logind[1085]: New session 1901 of user cnf.
