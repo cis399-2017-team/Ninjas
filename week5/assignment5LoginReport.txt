@@ -1,0 +1,105 @@
+Below is a summary of the login behavior when attempting to ssh into the cis399 team instances:
+Meni Fontaine 
+
+Binary Boiz:
+	Binary_Boiz_1 
+	52-27-48-226
+	Permission denied (publickey).
+
+	Binary_Boiz_2
+	35-161-107-254
+	Successfully logged in 
+
+	Binary_Boiz_3
+	35-160-253-168
+	Permission denied (publickey).
+
+Fork Bomb:
+	Fork-Bomb-pm
+	34.212.155.136
+	Permission denied (publickey).
+
+	FORKBOMB!!!
+	52-36-94-3
+	Permission denied, public key 
+
+	Forkbomb-p
+	ec2-34-210-161-107
+	Successfully logged in 
+
+	Forkbomb-p2
+	ec2-34-210-59-21
+	Successfully logged in 
+
+	ForkBombT
+	ec2-34-210-229-207.
+	Permission denied (publickey).
+        
+Hot Shame:
+	Hot-Shame-1-M
+	ec2-34-212-218-18
+	Successfully logged in 
+
+	Hot-Shame2-NEW
+	ec2-35-164-154-53.us-west-2.compute.amazonaws.com
+	Successfully logged in 
+
+	Hot-Shame-3 
+	ec2-35-162-107-173.us-west-2.compute.amazonaws.com
+	Successfully logged in 
+       
+Segmentation Squad:
+	SegmentationSqad1
+	ec2-35-161-210-61.us-west-2.compute.amazonaws.com
+	Couldn't log in, prompted for password 
+
+	SegmentationSquad2 
+	ec2-35-167-7-66.us-west-2.compute.amazonaws.com
+	Couldn't log in, prompted for password
+	
+	SegmentationSquad3master
+	ec2-52-35-159-146.us-west-2.compute.amazonaws.com
+	Couldn't log in, prompted for password
+       
+alphabet[11:14]:
+	alphabet[11]
+	ec2-52-41-11-58.us-west-2.compute.amazonaws.com
+	Permission denied (publickey).
+
+	alphabet[12]
+	ec2-35-164-220-179.us-west-2.compute.amazonaws.com
+	Permission denied (publickey).
+
+	alphabet[13]
+	ec2-35-162-13-179.us-west-2.compute.amazonaws.com
+	Permission denied (publickey).
+
+       
+Hideous Snakes:
+	Hideous Asp
+	ec2-35-166-125-131
+	Permission denied (publickey).
+	
+	Hideous Boa 
+	34-208-231-112.us
+	Permission denied (publickey).
+
+	Hideous Cobra 
+	ec2-54-70-181-182
+	Permission denied (publickey).
+        
+The Fighting Mongooses:
+	FtngMngs_1
+	ec2-34-210-229-207
+	Permission denied (publickey).
+
+	FtngMngs_2
+	ec2-35-164-218-151
+	Successfully logged in 
+
+	FtngMngs_3
+	ec2-34-211-216-177
+	Successfully logged in 
+
+Ninjas: 
+       My team's instance. I have access to all of our VMs. 
