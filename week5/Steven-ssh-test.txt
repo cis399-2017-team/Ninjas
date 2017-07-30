@@ -31,3 +31,6 @@ Team Name:
 		35.162.13.179: denied, publickey
 
 This is somewhat disappointing...
+
+As a note: On all vms with a password prompt, I have contacted the admins about supplying a temp password or removing
+password functionality to auth with public key. As of Sunday, July 30th at 4:00 PM, I have recieved no response.
