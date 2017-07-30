@@ -1,7 +1,7 @@
 Team Name:
 	Hot Shame:
 		34.212.218.18: connection refused, password
-		35.162.107.173: connection refused, password
+		35.162.107.173: Good to go!
 		35.164.154.53: connection refused, password
 	Binary Boiz:
 		35.161.107.254: Good to go
@@ -9,12 +9,12 @@ Team Name:
 		35.160.253.168: denied, publickey
 	Segmentation Squad:
 		35.161.210.61: denied, password prompt
-		35.167.7.66: denied, password prompt
+		35.167.7.66: Good to go!
 		52.35.159.146: denied, password prompt
 	Fork Bomb:
 		34.210.161.107: denied, publickey
 		52.36.94.3: denied, publickey
-		34.210.59.21: denied, publickey
+		34.210.59.21: Good to go
 		34.212.155.136: denied, publickey
 		34.210.229.207: denied, publickey
 	Hideous Snakes:
@@ -26,11 +26,10 @@ Team Name:
 		35.164.218.151: Good to go
 		34.212.41.75: denied, publickey
 	alphabet[11:14]:
-		52.41.11.58: denied, publickey
+		52.41.11.58: Good to go
 		35.164.220.179: denied, publickey
 		35.162.13.179: denied, publickey
 
-This is somewhat disappointing...
-
-As a note: On all vms with a password prompt, I have contacted the admins about supplying a temp password or removing
-password functionality to auth with public key. As of Sunday, July 30th at 4:00 PM, I have recieved no response.
+Note: Had an issue with people using a different username than the preferred name I had selected. Emailed all admins and resolved the issue.
+I only re-checked on their recommended instance in each category, so I potentially have more access rights than what is listed. I can log in
+to at least 1 vm from every group however.
