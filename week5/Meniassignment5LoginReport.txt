@@ -55,7 +55,7 @@ Segmentation Squad:
 
 	SegmentationSquad2 
 	ec2-35-167-7-66.us-west-2.compute.amazonaws.com
-	Couldn't log in, prompted for password
+	Successfully logged in 
 	
 	SegmentationSquad3master
 	ec2-52-35-159-146.us-west-2.compute.amazonaws.com
@@ -64,7 +64,7 @@ Segmentation Squad:
 alphabet[11:14]:
 	alphabet[11]
 	ec2-52-41-11-58.us-west-2.compute.amazonaws.com
-	Permission denied (publickey).
+	Successfully logged in. 
 
 	alphabet[12]
 	ec2-35-164-220-179.us-west-2.compute.amazonaws.com
@@ -82,7 +82,7 @@ Hideous Snakes:
 	
 	Hideous Boa 
 	34-208-231-112.us
-	Permission denied (publickey).
+	Successfully logged in 
 
 	Hideous Cobra 
 	ec2-54-70-181-182
