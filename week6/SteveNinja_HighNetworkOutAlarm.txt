@@ -1,0 +1,25 @@
+Alarm Details:
+- Name:                       SteveNinja-High-Network-Out
+- Description:                Created from EC2 Console
+- State Change:               OK -> ALARM
+- Reason for State Change:    Threshold Crossed: 1 datapoint [4712730.6 (03/08/17 22:53:00)] was greater than or equal to the threshold (350000.0).
+- Timestamp:                  Thursday 03 August, 2017 22:58:48 UTC
+- AWS Account:                006170570170
+
+Threshold:
+- The alarm is in the ALARM state when the metric is GreaterThanOrEqualToThreshold 350000.0 for 300 seconds. 
+
+Monitored Metric:
+- MetricNamespace:                     AWS/EC2
+- MetricName:                          NetworkOut
+- Dimensions:                          [InstanceId = i-027cc4e56255dccbc]
+- Period:                              300 seconds
+- Statistic:                           Average
+- Unit:                                not specified
+
+
+
+State Change Actions:
+- OK: 
+- ALARM: [arn:aws:sns:us-west-2:006170570170:Ninjas]
+- INSUFFICIENT_DATA: 

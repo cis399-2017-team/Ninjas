@@ -1,0 +1,25 @@
+Alarm Details:
+- Name:                       MeniNinja_StatusCheckFailed
+- Description:                Created from EC2 Console
+- State Change:               OK -> ALARM
+- Reason for State Change:    Threshold Crossed: 1 datapoint [1.0 (03/08/17 18:00:00)] was greater than or equal to the threshold (1.0).
+- Timestamp:                  Thursday 03 August, 2017 18:01:35 UTC
+- AWS Account:                006170570170
+
+Threshold:
+- The alarm is in the ALARM state when the metric is GreaterThanOrEqualToThreshold 1.0 for 60 seconds. 
+
+Monitored Metric:
+- MetricNamespace:                     AWS/EC2
+- MetricName:                          StatusCheckFailed_Instance
+- Dimensions:                          [InstanceId = i-0a7f116327f96d83e]
+- Period:                              60 seconds
+- Statistic:                           Maximum
+- Unit:                                not specified
+
+
+
+State Change Actions:
+- OK: 
+- ALARM: [arn:aws:sns:us-west-2:006170570170:Ninjas]
+- INSUFFICIENT_DATA: 
