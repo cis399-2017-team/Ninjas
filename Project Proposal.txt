@@ -1,0 +1,24 @@
+Build IM/Messaging server using XMPP and Jabber/Pidgin as the front-end chat client. Secure with Fail2Ban. Use mysql database for XMP with high availability database clustering.
+ 
+The effect on our user population should be minimal, as it will not effect VM availability to users. Fail2Ban might potentially shut out users but this is unlikely.
+ 
+We will implement the following preventative security measures:
+-install and configure Fail2Ban to prevent network attacks.
+-ensure ufw plays nice with XMPP and lets chat messages through.
+-ensure that XMPP does not introduce vulnerabilities in our system.
+ 
+The work that needs to be completed for this project is:
+-install and configure XMPP server
+-install and configure mysql
+-configure mysql database clustering on puppet agents???
+-install chat client on a client system
+-test if chat client can connect to XMPP server
+-test if chat client can initiate IM/chat with another person
+-install and configure Fail2Ban on XMPP server
+-configure puppet to automatically configure XMPP, Fail2Ban and mysql across VMs
+ 
+Client installation on Linux-based systems could be automated by creating a Puppet module for the Jabber client to install the Jabber client packages on each puppet agent.
+ 
+We should document the configuration settings of the XMPP server and database cluster we set up. We should also create documentation for the user population to install a client, connect to the XMPP server, and start a chat with other users.
+
+-Meni and Steve, mostly Meni
