@@ -1,0 +1,53 @@
+CIS399
+Team Ninjas 
+8/15/17 
+
+Final Project Write-Up 
+
+Goals: 
+•	Build and configure XMPP OpenFire server for IMing/messaging 
+•	Install and configure MySQL to use as embedded database for OpenFire 
+•	Verify that IMing/messaging capabilities work from a client machine  
+•	Install and configure Fail2Ban to prevent network attacks  
+•	Automate Fail2Ban installation and configuration via Puppet 
+
+Testing Methods: 
+•	Installed Pidgin chat client on a client machine and verified that chat client could connect to XMPP 	server
+•	Verified that two users (Steve and myself) could send and receive chat messages to each other using Pidgin 	chat client while connected to our XMPP server  
+•	Verified that Fail2Ban automatically installed on all puppet agents using puppet modules 
+
+User Impact: 
+•	Gives users IM/messaging functionality which could improve communication and collaboration abilities 
+•	The additional security Fail2Ban provides creates a more secure and stable environment which should result 	in less downtime, slowness, or compromises that might otherwise occur due to events such as brute force 	SSH attacks 
+•	Short of users performing nefarious activities, Fail2Ban should not affect or prevent users from utilizing 	the chat functionality of the XMPP server 
+
+Security Issues: 
+•	MySQL has a number of security vulnerabilities that could be remediated by using a strong DB password, 	running the MySQL DB security script to disable settings such as anonymous logon, and allowing least 	privileged access to the databases
+•	Administration of OpenFire is performed over the browser through an “admin console”. Ideally we should be 	using an SSL cert to access this console. 
+•	Pidgin clients are currently connecting and passing credentials to the XMPP server over unencrypted 	plaintext. We should be using SSL/encryption. 
+•	OpenFire uses Java, which has multiple security vulnerabilities.
+
+Steps to Completion of Work: 
+•	Installed Fail2Ban
+•	Automated installation and configuration of rules via Puppet 
+•	Installed MySQL on the server
+•	Created MySQL database, MySQL user account/s, MySQL grants, and imported OpenFire schema 
+•	Installed and configured OpenFire 
+•	Tested connectivity between client and server using Pidgin chat client 
+
+Maintenance/Automation: 
+•	Keep OpenFire updated using Puppet
+•	Keep Java updated using Puppet 
+•	Keep OS updated using Puppet 
+•	Configure and push Fail2Ban rules to agents using Puppet 
+•	Ensure Fail2Ban rules are fine-tuned to prevent network attacks on our servers, especially for attacks our 	servers appear to be extra susceptible to. 
+•	Manage Pidgin user accounts through OpenFire and audit periodically 
+
+
+Documentation: 
+•	https://github.com/cis399-2017-team/Ninjas/tree/master/finalproject/OpenFireConfigurationNotes.txt
+•	https://github.com/cis399-2017-team/Ninjas/tree/master/finalproject/Piden.conf
+•	It would be beneficial to have a brief how-to guide on installing OpenFire 
+
+
+
