@@ -5,47 +5,44 @@ Team Ninjas
 Final Project Write-Up 
 
 Goals: 
-ï	Build and configure XMPP OpenFire server for IMing/messaging 
-ï	Install and configure MySQL to use as embedded database for OpenFire 
-ï	Verify that IMing/messaging capabilities work from a client machine  
-ï	Install and configure Fail2Ban to prevent network attacks  
-ï	Automate Fail2Ban installation and configuration via Puppet 
+‚Ä¢	Build and configure XMPP OpenFire server for IMing/messaging 
+‚Ä¢	Install and configure MySQL to use as embedded database for OpenFire 
+‚Ä¢	Verify that IMing/messaging capabilities work from a client machine  
+‚Ä¢	Install and configure Fail2Ban to prevent network attacks  
+‚Ä¢	Automate Fail2Ban installation and configuration via Puppet 
 
 Testing Methods: 
-ï	Installed Pidgin chat client on a client machine and verified that chat client could connect to XMPP 		server
-ï	Verified that two users (Steve and myself) could send and receive chat messages to each other using Pidgin 	chat client while connected to our XMPP server  
-ï	Verified that Fail2Ban automatically installed on all puppet agents using puppet modules 
+‚Ä¢	Installed Pidgin chat client on a client machine and verified that chat client could connect to XMPP server
+‚Ä¢	Verified that two users (Steve and myself) could send and receive chat messages to each other using Pidgin chat client while connected   to our XMPP server  
+‚Ä¢	Verified that Fail2Ban automatically installed on all puppet agents using puppet modules 
 
 User Impact: 
-ï	Gives users IM/messaging functionality which could improve communication and collaboration abilities 
-ï	The additional security Fail2Ban provides creates a more secure and stable environment which should result 	in less downtime, slowness, or compromises that might otherwise occur due to events such as brute force 		SSH attacks 
-ï	Short of users performing nefarious activities, Fail2Ban should not affect or prevent users from utilizing 	the chat functionality of the XMPP server 
+‚Ä¢	Gives users IM/messaging functionality which could improve communication and collaboration abilities 
+‚Ä¢	The additional security Fail2Ban provides creates a more secure and stable environment which should result in less downtime,    slowness, or compromises that might otherwise occur due to events such as brute force SSH attacks 
+‚Ä¢	Short of users performing nefarious activities, Fail2Ban should not affect or prevent users from utilizing the chat functionality of the XMPP server 
 
 Security Issues: 
-ï	MySQL has a number of security vulnerabilities that could be remediated by using a strong DB password, 		running the MySQL DB security script to disable settings such as anonymous logon, and allowing least 		privileged access to the databases
-ï	Administration of OpenFire is performed over the browser through an ìadmin consoleî. Ideally we should be 		using an SSL cert to access this console. 
-ï	Pidgin clients are currently connecting and passing credentials to the XMPP server over unencrypted 		plaintext. We should be using SSL/encryption. 
-ï	OpenFire uses Java, which has multiple security vulnerabilities.
+‚Ä¢	MySQL has a number of security vulnerabilities that could be remediated by using a strong DB password,running the MySQL DB security script to disable settings such as anonymous logon, and allowing least privileged access to the databases
+‚Ä¢	Administration of OpenFire is performed over the browser through an ‚Äúadmin console‚Äù. Ideally we should be using an SSL cert to access this console. 
+‚Ä¢	Pidgin clients are currently connecting and passing credentials to the XMPP server over unencrypted plaintext. We should be using SSL/encryption. 
+‚Ä¢	OpenFire uses Java, which has multiple security vulnerabilities.
 
 Steps Needed to Complete Work : 
-ï	Automate Java updates with Puppet  
-ï	Configure Fail2Ban rules for OpenFire service via Puppet 
-ï	Request, install, and configure SSL certificate for OpenFire Admin Console
-ï	Configure encrypted connections from chat clients to XMPP server 
+‚Ä¢	Automate Java updates with Puppet  
+‚Ä¢	Configure Fail2Ban rules for OpenFire service via Puppet 
+‚Ä¢	Request, install, and configure SSL certificate for OpenFire Admin Console
+‚Ä¢	Configure encrypted connections from chat clients to XMPP server 
 
 Maintenance/Automation: 
-ï	Keep OpenFire updated using Puppet
-ï	Keep Java updated using Puppet 
-ï	Keep OS updated using Puppet 
-ï	Configure and push Fail2Ban rules to agents using Puppet 
-ï	Ensure Fail2Ban rules are fine-tuned to prevent network attacks on our servers, especially for attacks our 	servers appear to be extra susceptible to. 
-ï	Manage Pidgin user accounts through OpenFire and audit periodically 
+‚Ä¢	Keep OpenFire updated using Puppet
+‚Ä¢	Keep Java updated using Puppet 
+‚Ä¢	Keep OS updated using Puppet 
+‚Ä¢	Configure and push Fail2Ban rules to agents using Puppet 
+‚Ä¢	Ensure Fail2Ban rules are fine-tuned to prevent network attacks on our servers, especially for attacks our 	servers appear to be extra   susceptible to. 
+‚Ä¢	Manage Pidgin user accounts through OpenFire and audit periodically 
 
 
 Documentation: 
-ï	https://github.com/cis399-2017-team/Ninjas/tree/master/finalproject/OpenFireConfigurationNotes.txt
-ï	https://github.com/cis399-2017-team/Ninjas/tree/master/finalproject/Piden.conf
-ï	It would be beneficial to have a brief how-to guide on installing OpenFire 
-
-
-
+‚Ä¢	https://github.com/cis399-2017-team/Ninjas/tree/master/finalproject/OpenFireConfigurationNotes.txt
+‚Ä¢	https://github.com/cis399-2017-team/Ninjas/tree/master/finalproject/Piden.conf
+‚Ä¢	It would be beneficial to have a brief how-to guide on installing OpenFire 
