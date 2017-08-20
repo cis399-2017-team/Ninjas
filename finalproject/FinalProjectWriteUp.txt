@@ -12,28 +12,26 @@ Goals:
 •	Automate Fail2Ban installation and configuration via Puppet 
 
 Testing Methods: 
-•	Installed Pidgin chat client on a client machine and verified that chat client could connect to XMPP 	server
+•	Installed Pidgin chat client on a client machine and verified that chat client could connect to XMPP 		server
 •	Verified that two users (Steve and myself) could send and receive chat messages to each other using Pidgin 	chat client while connected to our XMPP server  
 •	Verified that Fail2Ban automatically installed on all puppet agents using puppet modules 
 
 User Impact: 
 •	Gives users IM/messaging functionality which could improve communication and collaboration abilities 
-•	The additional security Fail2Ban provides creates a more secure and stable environment which should result 	in less downtime, slowness, or compromises that might otherwise occur due to events such as brute force 	SSH attacks 
+•	The additional security Fail2Ban provides creates a more secure and stable environment which should result 	in less downtime, slowness, or compromises that might otherwise occur due to events such as brute force 		SSH attacks 
 •	Short of users performing nefarious activities, Fail2Ban should not affect or prevent users from utilizing 	the chat functionality of the XMPP server 
 
 Security Issues: 
-•	MySQL has a number of security vulnerabilities that could be remediated by using a strong DB password, 	running the MySQL DB security script to disable settings such as anonymous logon, and allowing least 	privileged access to the databases
-•	Administration of OpenFire is performed over the browser through an “admin console”. Ideally we should be 	using an SSL cert to access this console. 
-•	Pidgin clients are currently connecting and passing credentials to the XMPP server over unencrypted 	plaintext. We should be using SSL/encryption. 
+•	MySQL has a number of security vulnerabilities that could be remediated by using a strong DB password, 		running the MySQL DB security script to disable settings such as anonymous logon, and allowing least 		privileged access to the databases
+•	Administration of OpenFire is performed over the browser through an “admin console”. Ideally we should be 		using an SSL cert to access this console. 
+•	Pidgin clients are currently connecting and passing credentials to the XMPP server over unencrypted 		plaintext. We should be using SSL/encryption. 
 •	OpenFire uses Java, which has multiple security vulnerabilities.
 
-Steps to Completion of Work: 
-•	Installed Fail2Ban
-•	Automated installation and configuration of rules via Puppet 
-•	Installed MySQL on the server
-•	Created MySQL database, MySQL user account/s, MySQL grants, and imported OpenFire schema 
-•	Installed and configured OpenFire 
-•	Tested connectivity between client and server using Pidgin chat client 
+Steps Needed to Complete Work : 
+•	Automate Java updates with Puppet  
+•	Configure Fail2Ban rules for OpenFire service via Puppet 
+•	Request, install, and configure SSL certificate for OpenFire Admin Console
+•	Configure encrypted connections from chat clients to XMPP server 
 
 Maintenance/Automation: 
 •	Keep OpenFire updated using Puppet
